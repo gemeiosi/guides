@@ -1,12 +1,11 @@
 import React from 'react';
-import {Navbar,Nav} from 'react-bootstrap';
+import {Navbar} from 'react-bootstrap';
 import logo from '../static/logo.jpeg'
 import "../App.css";
 import {NavLink} from 'react-router-dom';
 import {
   CDBSidebar,
   CDBSidebarContent,
-  CDBSidebarFooter,
   CDBSidebarHeader,
   CDBSidebarMenu,
   CDBSidebarMenuItem,
