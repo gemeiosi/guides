@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 
-class Guides(models.Model):
+class Guide(models.Model):
     guideId = models.AutoField(primary_key=True)
     FirstName = models.CharField(max_length=100)
     LastName = models.CharField(max_length=100)

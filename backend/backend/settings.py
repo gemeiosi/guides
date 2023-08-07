@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "guides.apps.GuidesConfig",
+    'corsheaders',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -73,12 +76,25 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
+'''DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
+}'''
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'u540496483_guidesapp',
+        'USER': 'u540496483_adminuser',
+        'PASSWORD': '&Xgii5xZ6',
+        'HOST': '153.92.220.1',
+        'PORT': '3306',
+        'OPTIONS': {'sql_mode': 'STRICT_ALL_TABLES'}
+        }
 }
+
 
 
 # Password validation
